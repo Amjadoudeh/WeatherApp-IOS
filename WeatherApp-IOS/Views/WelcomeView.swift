@@ -9,12 +9,20 @@ import SwiftUI
 
 struct WelcomeView: View {
     @EnvironmentObject var locationManager: LocationManager
-    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            VStack(spacing: 20.0){
+                Text("Welcome to the Weather App")
+                    .bold()
+                    .font(.title)
+                
+                Text("Please share your current location to get the weather in your area")
+                    .padding()
+            }
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
-
 struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
         WelcomeView()
