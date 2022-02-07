@@ -8,9 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var locationManager = LocationManager()
+    
     var body: some View {
-        Text("Weather App")
-            .padding()
+        VStack {
+            WelcomeView()
+                .environmentObject(locationManager)
+        }.background( )
     }
 }
 

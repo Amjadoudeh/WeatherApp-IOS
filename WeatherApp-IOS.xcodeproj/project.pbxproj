@@ -15,6 +15,7 @@
 		70E4EE8B27B120640084586B /* WeatherApp_IOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4EE8A27B120640084586B /* WeatherApp_IOSUITests.swift */; };
 		70E4EE8D27B120640084586B /* WeatherApp_IOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4EE8C27B120640084586B /* WeatherApp_IOSUITestsLaunchTests.swift */; };
 		70E4EE9B27B126650084586B /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4EE9A27B126650084586B /* LocationManager.swift */; };
+		70E4EE9E27B12B6B0084586B /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4EE9D27B12B6B0084586B /* WelcomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		70E4EE8A27B120640084586B /* WeatherApp_IOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_IOSUITests.swift; sourceTree = "<group>"; };
 		70E4EE8C27B120640084586B /* WeatherApp_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		70E4EE9A27B126650084586B /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		70E4EE9D27B12B6B0084586B /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,9 +98,9 @@
 		70E4EE6E27B120610084586B /* WeatherApp-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				70E4EE9C27B12B050084586B /* Views */,
 				70E4EE9927B1263D0084586B /* Managers  */,
 				70E4EE6F27B120610084586B /* WeatherApp_IOSApp.swift */,
-				70E4EE7127B120610084586B /* ContentView.swift */,
 				70E4EE7327B120640084586B /* Assets.xcassets */,
 				70E4EE7527B120640084586B /* Preview Content */,
 			);
@@ -136,6 +138,15 @@
 				70E4EE9A27B126650084586B /* LocationManager.swift */,
 			);
 			path = "Managers ";
+			sourceTree = "<group>";
+		};
+		70E4EE9C27B12B050084586B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				70E4EE7127B120610084586B /* ContentView.swift */,
+				70E4EE9D27B12B6B0084586B /* WelcomeView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +282,7 @@
 				70E4EE7227B120610084586B /* ContentView.swift in Sources */,
 				70E4EE7027B120610084586B /* WeatherApp_IOSApp.swift in Sources */,
 				70E4EE9B27B126650084586B /* LocationManager.swift in Sources */,
+				70E4EE9E27B12B6B0084586B /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
