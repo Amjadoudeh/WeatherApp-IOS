@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		70648F4927B4FFD500ABD31A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70648F4827B4FFD500ABD31A /* LoadingView.swift */; };
+		70648F4B27B502F900ABD31A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70648F4A27B502F900ABD31A /* WeatherManager.swift */; };
 		70E4EE7027B120610084586B /* WeatherApp_IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4EE6F27B120610084586B /* WeatherApp_IOSApp.swift */; };
 		70E4EE7227B120610084586B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70E4EE7127B120610084586B /* ContentView.swift */; };
 		70E4EE7427B120640084586B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70E4EE7327B120640084586B /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 
 /* Begin PBXFileReference section */
 		70648F4827B4FFD500ABD31A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		70648F4A27B502F900ABD31A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		70E4EE6C27B120610084586B /* WeatherApp-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeatherApp-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70E4EE6F27B120610084586B /* WeatherApp_IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherApp_IOSApp.swift; sourceTree = "<group>"; };
 		70E4EE7127B120610084586B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				70E4EE9A27B126650084586B /* LocationManager.swift */,
+				70648F4A27B502F900ABD31A /* WeatherManager.swift */,
 			);
 			path = "Managers ";
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70648F4B27B502F900ABD31A /* WeatherManager.swift in Sources */,
 				70E4EE7227B120610084586B /* ContentView.swift in Sources */,
 				70E4EE7027B120610084586B /* WeatherApp_IOSApp.swift in Sources */,
 				70E4EE9B27B126650084586B /* LocationManager.swift in Sources */,
