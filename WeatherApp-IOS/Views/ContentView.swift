@@ -16,7 +16,7 @@ struct ContentView: View {
                 Text("Your coordinates are: \(location.longitude),\(location.latitude)")
             } else {
                 if locationManager.isLoading {
-                    // ProgrdssView()
+                    LoadingView()
                 } else {
                     WelcomeView()
                         .environmentObject(locationManager)
