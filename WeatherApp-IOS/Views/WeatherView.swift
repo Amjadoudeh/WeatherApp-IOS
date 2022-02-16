@@ -42,6 +42,9 @@ struct WeatherView: View {
                             .fontWeight(.bold)
                             .padding()
                     }
+                    
+                    Spacer()
+                        .frame(height: 80)
                 }
                 .frame(maxWidth: .infinity)
                 
