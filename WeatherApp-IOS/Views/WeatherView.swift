@@ -23,6 +23,18 @@ struct WeatherView: View {
                 }
                 .frame(maxWidth: .infinity, alignment: .leading)
                 
+                Spacer()
+                
+                VStack{
+                    HStack{
+                        Text(weather.main.feelsLike.roundDouble() + "º")
+                            .font(.system(size: 100))
+                            .fontWeight(.bold)
+                            .padding()
+                    }
+                }
+                .frame(maxWidth: .infinity)
+                
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
