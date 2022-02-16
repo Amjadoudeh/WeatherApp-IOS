@@ -11,7 +11,20 @@ struct WeatherView: View {
     var weather: ResponseBody
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack(alignment: .leading){
+            VStack{
+                VStack(alignment: .leading, spacing: 5){
+                    
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                
+            }
+            .padding()
+            .frame(maxWidth: .infinity, alignment: .leading)
+        }
+        .edgesIgnoringSafeArea(.bottom)
+        .background(Color(hue: 0.656, saturation: 0.787, brightness: 0.354) )
+        .preferredColorScheme(.dark)
     }
 }
 
@@ -20,4 +33,3 @@ struct WeatherView_Previews: PreviewProvider {
         WeatherView(weather: previewWeather)
     }
 }
-
