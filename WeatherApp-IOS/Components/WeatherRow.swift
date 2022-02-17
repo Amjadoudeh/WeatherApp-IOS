@@ -28,6 +28,6 @@ struct WeatherRow: View {
 
 struct WeatherRow_Previews: PreviewProvider {
     static var previews: some View {
-        WeatherRow()
+        WeatherRow(logo: "thermometer", name: "Feels like", value: "8º")
     }
 }
