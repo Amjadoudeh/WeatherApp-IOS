@@ -21,7 +21,14 @@ struct WeatherRow: View {
                 .background(Color(hue: 1.0, saturation: 0.0, brightness: 0.888))
                 .cornerRadius(50)
             
-            
+            VStack(alignment: .leading, spacing: 8) {
+                Text(name)
+                    .font(.caption)
+                
+                Text(value)
+                    .bold()
+                    .font(.title)
+            }
         }
     }
 }
