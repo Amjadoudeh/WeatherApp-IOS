@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		703283C227BEDCC300988D38 /* WeatherRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 703283C127BEDCC300988D38 /* WeatherRow.swift */; };
 		70648F4927B4FFD500ABD31A /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70648F4827B4FFD500ABD31A /* LoadingView.swift */; };
 		70648F4B27B502F900ABD31A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70648F4A27B502F900ABD31A /* WeatherManager.swift */; };
 		70648F4D27B5780100ABD31A /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70648F4C27B5780100ABD31A /* WeatherView.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		703283C127BEDCC300988D38 /* WeatherRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherRow.swift; sourceTree = "<group>"; };
 		70648F4827B4FFD500ABD31A /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		70648F4A27B502F900ABD31A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		70648F4C27B5780100ABD31A /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		703283C027BEDC9400988D38 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				703283C127BEDCC300988D38 /* WeatherRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		70E4EE6327B120610084586B = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				70E4EE9C27B12B050084586B /* Views */,
+				703283C027BEDC9400988D38 /* Components */,
 				70E4EE9927B1263D0084586B /* Managers  */,
 				70E4EE6F27B120610084586B /* WeatherApp_IOSApp.swift */,
 				70E4EE7327B120640084586B /* Assets.xcassets */,
@@ -303,6 +314,7 @@
 				70E4EE7227B120610084586B /* ContentView.swift in Sources */,
 				70E4EE7027B120610084586B /* WeatherApp_IOSApp.swift in Sources */,
 				70E4EE9B27B126650084586B /* LocationManager.swift in Sources */,
+				703283C227BEDCC300988D38 /* WeatherRow.swift in Sources */,
 				70E4EE9E27B12B6B0084586B /* WelcomeView.swift in Sources */,
 				70648F4F27B86EE200ABD31A /* ModelData.swift in Sources */,
 				70648F4D27B5780100ABD31A /* WeatherView.swift in Sources */,
