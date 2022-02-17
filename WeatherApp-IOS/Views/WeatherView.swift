@@ -106,3 +106,6 @@ struct WeatherView_Previews: PreviewProvider {
         WeatherView(weather: previewWeather)
     }
 }
+
+
+//TODO: make the shapes and the background colour change according to the temperature
