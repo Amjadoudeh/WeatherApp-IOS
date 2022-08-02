@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  WeatherApp-IOS
-//
-//  Created by Amjad Oudeh on 07.02.22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
@@ -16,6 +9,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             if let location = locationManager.location {
+//                               Text("Your coordinates are: \(location.longitude),\(location.latitude)")
                 if let weather = weather {
                     WeatherView(weather: weather)
                 } else {
@@ -30,7 +24,7 @@ struct ContentView: View {
                             }
                         }
                 }
-//                Text("Your coordinates are: \(location.longitude),\(location.latitude)")
+
             } else {
                 if locationManager.isLoading {
                     LoadingView()

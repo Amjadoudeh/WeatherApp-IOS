@@ -1,10 +1,3 @@
-//
-//  SwiftUIView.swift
-//  WeatherApp-IOS
-//
-//  Created by Amjad Oudeh on 10.02.22.
-//
-
 import SwiftUI
 
 struct LoadingView: View {

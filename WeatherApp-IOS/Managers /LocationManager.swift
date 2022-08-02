@@ -1,14 +1,7 @@
-//
-//  LocationManager.swift
-//  WeatherApp-IOS
-//
-//  Created by Amjad Oudeh on 07.02.22.
-//
-
 import Foundation
 import CoreLocation
 
-class  LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
+class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
     let manager = CLLocationManager()
     
     @Published var location: CLLocationCoordinate2D?
@@ -24,7 +17,7 @@ class  LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         manager.requestLocation()
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdataLocations locations: [CLLocation]) {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         location = locations.first?.coordinate
         isLoading = false
     }
@@ -34,3 +27,4 @@ class  LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
         isLoading = false
     }
 }
+

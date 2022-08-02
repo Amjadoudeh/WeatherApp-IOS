@@ -1,10 +1,3 @@
-//
-//  Extensions.swift
-//  WeatherApp-IOS
-//
-//  Created by Amjad Oudeh on 15.02.22.
-//
-
 import Foundation
 import UIKit
 import SwiftUI

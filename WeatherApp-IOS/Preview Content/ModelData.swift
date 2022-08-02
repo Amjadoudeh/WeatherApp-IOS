@@ -1,10 +1,3 @@
-//
-//  ModelData.swift
-//  WeatherApp-IOS
-//
-//  Created by Amjad Oudeh on 12.02.22.
-//
-
 import Foundation
 
 var previewWeather: ResponseBody = load("weatherData.json")
