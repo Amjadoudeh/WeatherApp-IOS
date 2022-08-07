@@ -1,10 +1,3 @@
-//
-//  WeatherManager.swift
-//  WeatherApp-IOS
-//
-//  Created by Amjad Oudeh on 10.02.22.
-//
-
 import Foundation
 import CoreLocation
 
@@ -17,7 +10,7 @@ class WeatherManager {
         let (data, response) = try await URLSession.shared.data(for: urlRequest)
 
         guard (response as? HTTPURLResponse)?.statusCode == 200 else { fatalError("Error fetching weather data")}
-        
+
         let decodedData = try JSONDecoder().decode(ResponseBody.self, from: data)
         return decodedData
     }
@@ -50,7 +43,7 @@ struct ResponseBody: Decodable {
         var pressure: Double
         var humidity: Double
     }
-    
+
     struct WindResponse: Decodable {
         var speed: Double
         var deg: Double
@@ -62,4 +55,3 @@ extension ResponseBody.MainResponse {
     var tempMin: Double { return temp_min }
     var tempMax: Double { return temp_max }
 }
-

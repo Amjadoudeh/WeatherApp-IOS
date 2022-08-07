@@ -2,14 +2,13 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var locationManager = LocationManager()
-    
+
     var weatherManager = WeatherManager()
     @State var weather: ResponseBody?
-    
+
     var body: some View {
         VStack {
             if let location = locationManager.location {
-//                               Text("Your coordinates are: \(location.longitude),\(location.latitude)")
                 if let weather = weather {
                     WeatherView(weather: weather)
                 } else {
@@ -18,7 +17,7 @@ struct ContentView: View {
                             do {
                                 weather = try await weatherManager
                                 .getCurrentWeather(latitude: location.latitude, longitude: location.longitude)
-                                
+
                             } catch {
                                 print("Error getting weather: \(error)")
                             }
@@ -33,7 +32,7 @@ struct ContentView: View {
                         .environmentObject(locationManager)
                 }
             }
-        }.background(Color(hue: 0.656, saturation: 0.787, brightness: 0.354) )
+        }.background(Color(hue: 0.650, saturation: 0.780, brightness: 0.300) )
             .preferredColorScheme(.dark)
     }
 }
